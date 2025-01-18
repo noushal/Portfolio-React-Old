@@ -14,7 +14,6 @@ const Ball = (props: any) => {
   const [decal] = useTexture([props.imgUrl]);
 
   return (
-    <div className="md:hidden">
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
@@ -36,7 +35,6 @@ const Ball = (props: any) => {
         />
       </mesh>
     </Float>
-    </div>
   );
 };
 
